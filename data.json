@@ -1,0 +1,74 @@
+[
+  {
+    "logo": "images/logo-devlens.svg",
+    "name":"DevLens",
+    "description":"Quickly inspect page layouts and visualize element boundaries.",
+    "isActive": true
+  },
+  { 
+    "logo":"images/logo-style-spy.svg",
+    "name":"stylSpy",
+    "description":"Instantly analyze and copy CSS from any web page element",
+    "isActive": true 
+  },
+  {
+    "logo":"images/logo-speed-boost.svg",
+    "name": "SpeedBoost",
+    "description": "optimizes browser resources usage to accelerate page loading.",
+    "isActive": false
+  },
+  {
+    "logo":"images/logo-json-wizard.svg",
+    "name":"JSONWizard",
+    "description":" formats JSON data and protects JSON response in browser.",
+    "isActive": true
+  },
+  {
+    "logo":"images/logo-tab-master-pro.svg",
+    "name":"TabMaster Pro",
+    "description":"organizes browser tabs into groups and sessions.",
+    "isActive": true
+  },
+  {
+    "logo":"images/logo-viewport-buddy.svg",
+    "name":" ViewportBuddy",
+    "description":"simulates various screen resolutions directly within the browser.",
+    "isActive": false
+  },
+  {
+    "logo":"images/logo-markup-notes.svg",
+    "name":"Markup Notes",
+    "description":"enables annotation and notes directly into web pages for collaborative debugging.",
+    "isActive": true
+  },
+  {
+    "logo":"images/logo-grid-guides.svg",
+    "name":"GridGuides",
+    "description":"overlays customizable grids and alignment guides on any webpage.",
+    "isActive": false
+  },
+  {
+    "logo":"images/logo-palette-picker.svg",
+    "name":"Palette Picker",
+    "description":" instantly extracts color palettes from any webpage.",
+    "isActive":true
+  },
+  {
+    "logo":"images/logo-link-checker.svg",
+    "name":"LinkChecker",
+    "description":"scans and highlights broken links in any pages.",
+    "isActive":true
+  },
+  {
+    "logo":"images/logo-dom-snapshot.svg",
+    "name":"DOM Snapshot",
+    "description": "captures and exports DOM structures quickly.",
+    "isActive":false
+  },
+  {
+    "logo":"images/logo-console-plus.svg",
+    "name":" ConsolePlus",
+    "description":"inherits the developer console with enhanced debugging, filtering, and logging.",
+    "isActive": true
+  }
+]

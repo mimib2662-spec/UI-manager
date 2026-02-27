@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+ <html>
+   <head> <title>UI Maneger</title> 
+    <style>
+      body {
+       margin: 0;
+       background-color: #0f1b3d; 
+      } 
+      .top-bar {
+       background-color: hsl(224, 19%, 31%); 
+       padding: 13px; 
+       border-radius: 15px; 
+       margin: 30px;
+       margin-right: 100px;
+       margin-left: 50px;
+      } 
+      h1{ 
+       color:rgb(224, 218, 218); 
+       display:inline-block; 
+       font-family:Arial, Helvetica, sans-serif;
+       font-size:20px;
+       margin-left:50px; 
+      }
+      img{ 
+       color:white; 
+      } 
+      .first{
+       margin-left:750px;
+       
+      } 
+     .second{ border:none;
+        margin-left:15px; 
+      }
+      .third{ 
+        margin-left:10px;
+         
+      } 
+      .card { 
+        background-color:#313339 ;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        border-radius: 12px;
+        padding:20px;
+        width: 300px;
+        border: 2px solid #3a4255; 
+      }
+      .card-left { 
+        display: flex; 
+        align-items: flex-start; 
+        gap: 15px; 
+      }
+      .card img { 
+        width: 70px;
+        height:70px; 
+      } 
+      .text h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color:white; 
+        font-size:20px;
+        margin: 0;
+      }
+      .text p{ 
+        font-family: Arial, Helvetica, sans-serif; 
+        color:rgb(179, 171, 171); 
+        font-size:12px; 
+       } 
+      .Remove{
+        margin-top: 15px;
+        padding: 6px 14px; 
+        align-self: flex-start; 
+        border-radius: 15px;
+        color:white;
+        background-color: #4b4c50;
+        border: 1px solid #6b6e76;
+      } 
+      #cards-container{
+       display:flex; 
+       flex-wrap: wrap;
+       justify-content: flex-start; 
+       padding: 40px 60px;
+       gap:20px;
+     } 
+      .sun{
+       margin-left:830px;
+       display: inline;
+       align-items:left;
+      } 
+      .switch { 
+       position:relative;
+       display:inline-block;
+       width:50px;
+       height:26px;
+      } 
+     .switch input { 
+       width: 0px;
+       height:0px; 
+       opacity: 0; 
+      } 
+      .slider { 
+        position: absolute;
+        cursor: pointer; 
+        background-color: #ccc;
+        border-radius: 34px;
+        top: 0; 
+        left: 0; 
+        right: 0;            
+        bottom: 0; 
+        transition: 0.4s; 
+       }
+      .slider::before {
+       position: absolute;
+       content: "";
+       height: 20px;
+       width: 20px; 
+       left: 3px;
+       bottom: 3px;
+       background-color: white;
+       border-radius: 50%; 
+       transition: 0.4s;
+     } 
+       input:checked + .slider {
+        background-color: #ff5c5c; 
+      } 
+      input:checked + .slider::before { transform: translateX(24px); 
+      }
+      .card-actions {
+        display: flex;
+        justify-content: space-between; /* pushes left & right */
+        align-items: center;
+        margin-bottom: 5px;
+      }
+     
+      .left button {
+        background-color: #313339;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 15px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      .left button.active {
+        background-color: rgb(235, 76, 76);
+      } 
+   </style>
+    </head>
+   <body> 
+        <header class="top-bar"> 
+          <img src="images/logo 1.svg" alt="logo 1"> 
+          <img class="sun" src="images/sun.svg" alt="sun"> 
+        </header>
+      <div class="left"> 
+       <h1>Extensions List</h1> 
+       <button id="show-all" class="first">All</button> 
+       <button id="show-active" class="second">Active</button> 
+       <button id="show-inactive" class="third">Inactive</button>
+      </div>
+      <div id="cards-container"></div> 
+       
+      <script src="script.js"></script> 
+   </body> 
+  </html>
